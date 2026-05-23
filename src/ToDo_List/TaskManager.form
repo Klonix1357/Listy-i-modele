@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ToDo_List.TaskManager">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="46081" binding="topPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d9ab5" class="javax.swing.JLabel" binding="newTaskLabel">
+            <constraints/>
+            <properties>
+              <text value="Nowe zadanie: "/>
+            </properties>
+          </component>
+          <component id="e1f48" class="javax.swing.JTextField" binding="taskInput">
+            <constraints/>
+            <properties>
+              <columns value="20"/>
+            </properties>
+          </component>
+          <component id="2b6da" class="javax.swing.JButton" binding="addButton">
+            <constraints/>
+            <properties>
+              <text value="Dodaj"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="767ba" binding="centerPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="bf7cb">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="c3287" class="javax.swing.JList" binding="taskList">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="543a4" binding="bottomPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="87791" class="javax.swing.JLabel" binding="taskCounter">
+            <constraints/>
+            <properties>
+              <text value="Liczba zadań: 0"/>
+            </properties>
+          </component>
+          <hspacer id="9a84e">
+            <constraints/>
+          </hspacer>
+          <component id="66423" class="javax.swing.JButton" binding="deleteButton">
+            <constraints/>
+            <properties>
+              <text value="Usuń zaznaczone"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
